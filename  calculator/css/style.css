@@ -1,0 +1,70 @@
+*::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-clip: url(/items/Mr\ Fox\ Restaurant\ Promo\ Video.mp4) ;
+  }
+  
+  .calculator-grid {
+    padding-right: 40%;
+    margin-top: -10%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    position: relative;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    padding-top: -%;
+  }
+  
+  .calculator-grid > button {
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(19, 155, 92, 0.829);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(226, 213, 213, 0.9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    border-radius: 20px;
+    grid-column: 1 / -1;
+    background-color: rgba(56, 202, 56, 0.986);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+  video{
+    position: absolute;
+    padding:10px;
+    width:1400px;
+    height: 1400px;
+  }
